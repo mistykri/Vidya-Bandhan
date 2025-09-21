@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Teacher Dashboard - Vidya Bandhan</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="page-teacher">
+  <div class="container">
+    <header>
+      <h1>Teacher Dashboard</h1>
+      <div class="small-row">
+        <div id="teacher-name" class="muted"></div>
+        <div>
+          <a href="index.html" class="btn">Logout</a>
+          <a href="ai-tutor.html" class="btn">AI Tutor</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="card">
+      <section>
+        <h2>Create Course</h2>
+        <input id="course-title" placeholder="Course title" />
+        <textarea id="course-desc" placeholder="Short description"></textarea>
+        <button id="btn-create-course" class="btn success">Create Course</button>
+      </section>
+
+      <section>
+        <h2>Your Courses</h2>
+        <div id="teacher-courses" class="list"></div>
+      </section>
+    </main>
+
+    <footer class="muted">Upload resources: choose file → saved locally (IndexedDB). Students on the same browser can access them.</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

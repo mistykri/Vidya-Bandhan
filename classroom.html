@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Classroom - Vidya Bandhan</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="page-class">
+  <div class="container">
+    <header>
+      <h1 id="class-title">Classroom</h1>
+      <div class="small-row">
+        <div id="class-course" class="muted"></div>
+        <div>
+          <a href="student.html" class="btn">Back</a>
+          <button id="btn-mark-present" class="btn success">Mark Present</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="card">
+      <section>
+        <h2>Live / Recorded</h2>
+        <div id="video-area" class="video-area muted">
+          <!-- video element injected here -->
+        </div>
+        <div class="row">
+          <label class="muted">TTS:</label>
+          <button id="btn-tts" class="btn">Read Description</button>
+          <label class="muted">Captions:</label>
+          <button id="btn-start-captions" class="btn">Start Captions</button>
+          <button id="btn-stop-captions" class="btn">Stop</button>
+        </div>
+        <pre id="live-caption" class="caption"></pre>
+      </section>
+
+      <section>
+        <h2>Resources</h2>
+        <div id="course-resources" class="list"></div>
+      </section>
+
+      <section>
+        <h2>Chat / Q&A</h2>
+        <div id="chat-box" class="chat"></div>
+        <div class="row">
+          <input id="chat-input" placeholder="Ask a question..." />
+          <button id="chat-send" class="btn primary">Send</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="muted">Chat messages are stored in localStorage for demo (same browser).</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

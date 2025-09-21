@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Student Dashboard - Vidya Bandhan</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="page-student">
+  <div class="container">
+    <header>
+      <h1>Student Dashboard</h1>
+      <div class="small-row">
+        <div id="student-name" class="muted"></div>
+        <div>
+          <a href="index.html" class="btn">Logout</a>
+          
+          <a href="ai-tutor.html" class="btn">AI Tutor</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="card">
+      <section>
+        <h2>My Courses</h2>
+        <div id="student-courses" class="list"></div>
+        <p id="no-courses" class="muted">No courses yet. Ask a teacher to add a course or create one as a teacher.</p>
+      </section>
+
+      <section>
+        <h2>Offline Saved Resources</h2>
+        <div id="saved-resources" class="list"></div>
+      </section>
+    </main>
+
+    <footer class="muted">Data stored locally in your browser (IndexedDB + localStorage).</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

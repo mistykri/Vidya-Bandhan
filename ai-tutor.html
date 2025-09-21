@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Tutor - Vidya Bandhan</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="page-ai">
+  <div class="container">
+    <header><h1>AI Tutor (optional)</h1></header>
+
+    <main class="card">
+      <section>
+        <p class="muted">This page calls OpenAI API directly from the browser. <strong>Do not paste a long-term secret key here for production</strong>. For demo only, paste a temporary key and remove it after use.</p>
+        <label>OpenAI API Key (paste for one-time use)</label>
+        <input id="openai-key" placeholder="sk-..." />
+        <textarea id="ai-question" placeholder="Ask the AI a study question..." rows="4"></textarea>
+        <div class="row">
+          <button id="btn-ai-ask" class="btn primary">Ask AI</button>
+          <button id="btn-ai-clear" class="btn">Clear</button>
+        </div>
+        <h3>Answer</h3>
+        <pre id="ai-answer" class="ai-answer muted">Answer will appear here.</pre>
+      </section>
+    </main>
+
+    <footer class="muted">Exposing API keys in client-side code is insecure — use with care.</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
