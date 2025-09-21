@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Vidya Bandhan - Login</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="page-index">
+  <div class="container">
+    <header><h1>Vidya Bandhan</h1><p>Remote Classroom For Rural Colleges</p></header>
+
+    <main class="card">
+      <div class="two-col">
+        <section>
+          <h2>Login</h2>
+          <input id="login-email" placeholder="Email" />
+          <input id="login-password" placeholder="Password" type="password" />
+          <div class="row">
+            <button id="btn-login" class="btn primary">Login</button>
+            <button id="btn-guest" class="btn">Guest Student</button>
+          </div>
+          <p id="login-msg" class="muted"></p>
+        </section>
+
+        <section>
+          <h2>Signup</h2>
+          <input id="signup-name" placeholder="Full name" />
+          <input id="signup-email" placeholder="Email" />
+          <input id="signup-password" placeholder="Password" type="password" />
+          <select id="signup-role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
+          <div class="row">
+            <button id="btn-signup" class="btn success">Create account</button>
+          </div>
+          <p class="muted">Use this demo for offline/hackathon. Data stays in your browser.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="muted">Open <strong>Index Page to start.</strong></footer>
+  
+<nav class="menu"><a href="student.html" class="btn">Student Dashboard</a>
+    <a href="teacher.html" class="btn">Teacher Dashboard</a>
+    <a href="classroom.html" class="btn">Classroom</a>
+    <a href="ai-tutor.html" class="btn">AI Tutor</a>
+</nav>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
